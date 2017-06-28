@@ -62,6 +62,11 @@
 				<input type="text" placeholder="Escriba numero de tarjeta" name="numero"/>
 				
 				<button name="buscar" type="submit">Buscar</button>
+
+				<button name="imprimir" type="submit">Imprimir</button>
+
+
+
 			</form>
 
 			<!--<h3>Comensal</h3>-->
