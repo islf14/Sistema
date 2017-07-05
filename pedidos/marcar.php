@@ -22,9 +22,7 @@
 			<hr>
 			<form class="form-horizontal" role="form" id="datos_pedido">
 				<div class="row">
-				  
-				  
-				  
+				
 					<div class="col-md-3">
 						<label for="transporte" class="control-label">Número de Tarjeta</label>
 						<input type="text" class="form-control input-sm" id="transporte" value="Terrestre" required>
@@ -35,7 +33,6 @@
 						<select class="proveedor form-control" name="proveedor" id="proveedor" required>
 						</select>
 					</div>
-
 
 					<!--<div class="col-md-2">
 						<label for="condiciones" class="control-label">Condiciones de pago</label>
