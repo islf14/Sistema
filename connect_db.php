@@ -7,7 +7,7 @@ function conectar(){
 	$server="localhost";
 	$bd="comedor_unjbg";
 	$user="root";
-	$pass="1234567";
+	$pass="123456";
 
 	$conexion=new mysqli($server,$user,$pass,$bd);
 
