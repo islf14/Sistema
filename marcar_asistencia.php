@@ -19,7 +19,7 @@
 						<div class="row">					
 							<div class="col-md-3">
 								<label for="transporte" class="control-label">Número de Tarjeta</label>
-								<input type="text" class="form-control input-sm" id="transporte" value="Tarjeta" required>
+								<input type="text" class="form-control input-sm"  maxlength="4" id="transporte"  required placeholder="Tarjeta">
 							</div>						
 							<div class="col-md-3">
 								<label for="proveedor" class="control-label">Selecciona Turno</label>						
