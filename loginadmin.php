@@ -24,13 +24,7 @@
 							<tr><td></td>
 								<td width=80 align=center><input class="btn btn-primary" type="submit" value="Aceptar"></td></tr>
 						</table>
-					</form>
-					<?php
-							if(isset($_POST['submit'])){
-								require("registro.php");
-							}
-						?>
-						<!--Fin formulario registro -->
+					</form>					
 				</td></tr>
 			</table>
 		</div></center>

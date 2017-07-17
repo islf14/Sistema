@@ -15,30 +15,32 @@
 				<div class="col-md-12">
 					<h2><span class="glyphicon glyphicon-edit"></span> Marcar Asistencia</h2>
 					<hr>
-					<form class="form-horizontal" role="form" id="datos_pedido">
+
+					<form class="form-horizontal" role="form" id="datos_pedido" action="registro_as.php" method = "POST">
 						<div class="row">					
 							<div class="col-md-3">
 								<label for="transporte" class="control-label">Número de Tarjeta</label>
-								<input type="text" class="form-control input-sm"  maxlength="4" id="transporte"  required placeholder="Tarjeta">
+								<input type="text" class="form-control input-sm" name="tarjeta" maxlength="3" id="transporte"  required placeholder="Tarjeta">
 							</div>						
 							<div class="col-md-3">
 								<label for="proveedor" class="control-label">Selecciona Turno</label>						
-								<select class="proveedor form-control" name="proveedor" id="proveedor" required>
-									<option>Desayuno</option>
-									<option>Almuerzo</option>
-									<option>Cena</option>
+								<select class="proveedor form-control" name="turno" id="proveedor" required>
+									<option  value="1">Desayuno</option>
+									<option  value="2">Almuerzo</option>
+									<option  value="3">Cena</option>
 								</select>
 							</div>								
 						</div>		
 						<hr>
 						<div class="col-md-12">
 							<div class="pull-right">
-								<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
-								<span class="glyphicon glyphicon-plus"></span> Marcar Asistencia
-								</button>				
+								<input type="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal" value="Marcar Asistencia">
+								<span class="glyphicon glyphicon-plus"></span>
+								</input>				
 							</div>	
 						</div>
 					</form>
+
 				</div>	
 			</div>
 		</div>
