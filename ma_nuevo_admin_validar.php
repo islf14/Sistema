@@ -19,7 +19,7 @@
 				//echo 'Se ha registrado con exito';
 				echo ' <script language="javascript">alert("Usuario registrado con éxito");</script> ';
 				$con->close();
-				echo "<script>location.href='admin_menu'</script>";
+				echo "<script>location.href='admin_menu.html'</script>";
 			}			
 		}else{echo 'Las contraseñas son incorrectas';}
 ?>

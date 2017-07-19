@@ -15,7 +15,12 @@ input[type=text]{
 	height:35px;
 	font: 14px normal normal uppercase helvetica, arial, serif;
 }
-
+.ima {
+	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 /*textarea{
 	width: 470px;
 	height: 110px;

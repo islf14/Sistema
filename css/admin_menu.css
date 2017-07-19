@@ -61,6 +61,7 @@
 	.container {
 		margin-left: auto;
 		margin-right: auto;
+		background: #5875D5;
 	}
 
 	.container.\31 25\25 {
@@ -2183,7 +2184,7 @@
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../images/oasa.JPG");
 			}
 
 			#main > section.two {

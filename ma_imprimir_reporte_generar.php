@@ -7,7 +7,7 @@ $fecha2=$_POST['fecha2'];
 $numero=$_POST['numero'];
 echo "<script>alert('generar');</script>";
 
-$usuarios=$conexion->query("SELECT *  FROM v_asis where alumno_tarjeta='$numero' and fecha BETWEEN '$fecha1' AND '$fecha2'");
+$usuarios=$conexion->query("SELECT *  FROM asistencia where alumno_tarjeta='$numero' and fecha BETWEEN '$fecha1' AND '$fecha2'");
 
 if(isset($_POST['generar_reporte']))
 {

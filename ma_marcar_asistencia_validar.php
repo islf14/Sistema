@@ -1,10 +1,11 @@
 <?php
     date_default_timezone_set("America/Lima");
     include("conexion.php");
+     $con= conectar();
     function retornar(){
         echo "<script>location.href='ma_marcar_asistencia.php'</script>";
     }
-    $con= conectar();
+   
     $tarjeta = $_POST["tarjeta"];
     $opcion = $_POST["turno"];
 
@@ -14,17 +15,22 @@
         echo "<script>alert('No Existe Número de tarjeta')</script>";
         retornar();
     }
-    //
+    //    
     $fecha_sistema= date("Y-m-d H:i:s");
     ////////////
-    $hora_actual=date("H:i",mktime(18,45));
-    $fecha_actual=date("Y-m-d",mktime(0,0,0,07,10,2017));
+    //$hora_actual=date("H:i",mktime(07,45));
+    $hora_actual=date("H:i");
+    //echo "<script>alert('hora actual: $hora_actual')</script>";
+    //$fecha_actual=date("Y-m-d",mktime(0,0,0,07,19,2017));
+    $fecha_actual=date("Y-m-d");
+    //echo "<script>alert('fecha actual: $fecha_actual')</script>";
     //////////////
+    $admin="admin";
     //establecienido límites
     $desayuno_min=date("H:i",mktime(6,30));
     $desayuno_max=date("H:i",mktime(8,25));
     $almuerzo_min=date("H:i",mktime(12,00));
-    $almuerzo_max=date("H:i",mktime(13,55));
+    $almuerzo_max=date("H:i",mktime(15,55));
     $cena_min=date("H:i",mktime(17,30));
     $cena_max=date("H:i",mktime(20,10));
 
@@ -33,11 +39,7 @@
         $desayuno_max=date("H:i",mktime(8,30));
         $almuerzo_min=date("H:i",mktime(11,30));
         $almuerzo_max=date("H:i",mktime(13,00));
-    }
-    //$hora_actual=date("H:i");
-    //$hora = date("H:i",mktime(9,00));
-    //echo "<script>alert('fecha actual: $fecha_sistema')</script>";
-    //echo "<script>alert('hora actual: $hora_actual')</script>";    
+    }   
     //////////////////////////////////////////////
     $registro=$con->query("select alumno_tarjeta, id_asistencia,desayuno,almuerzo,cena from asistencia where fecha = '$fecha_actual' and alumno_tarjeta = $tarjeta;");
     $array_registro=mysqli_fetch_array($registro);
@@ -61,7 +63,7 @@
                 echo "<script>alert('Error!!! Ya está registrado en Desayuno')</script>";            
                 retornar();
             }else if($registros_enc<1){
-                $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario, id_asistencia,fecha, desayuno) VALUES ('$tarjeta', 'isaias', '$id', '$fecha_actual', '$hora_actual');");
+                $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario, id_asistencia,fecha, desayuno) VALUES ('$tarjeta', '$admin', '$id', '$fecha_actual', '$hora_actual');");
                 echo "<script>alert('Registo exitodo en desayuno')</script>";            
                 retornar();
             }else {
@@ -85,7 +87,7 @@
                     }
                     //registrando almuerzo si no está  creado   
                 }else if($registros_enc<1){
-                    $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario,id_asistencia,fecha,almuerzo,cena,domingo) VALUES ('$tarjeta', 'isaias', '$id', '$fecha_actual', '$hora_actual', '$hora_actual', '$hora_actual');");
+                    $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario,id_asistencia,fecha,almuerzo,cena,domingo) VALUES ('$tarjeta', '$admin', '$id', '$fecha_actual', '$hora_actual', '$hora_actual', '$hora_actual');");
                     echo "<script>alert('Registo exitodo en Almuerzo')</script>";
                     retornar();
                 }else {
@@ -105,7 +107,7 @@
                     }
                     //registrando almuerzo si no está  creado   
                 }else if($registros_enc<1){
-                    $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario, id_asistencia,fecha, almuerzo) VALUES ('$tarjeta', 'isaias', '$id', '$fecha_actual', '$hora_actual');");
+                    $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario, id_asistencia,fecha, almuerzo) VALUES ('$tarjeta', '$admin', '$id', '$fecha_actual', '$hora_actual');");
                     echo "<script>alert('Registo exitodo en Almuerzo')</script>";
                     retornar();
                 }else {
@@ -126,7 +128,7 @@
                     retornar();
                 }
             }else if($registros_enc<1){
-                $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario, id_asistencia,fecha, cena) VALUES ('$tarjeta', 'isaias', '$id', '$fecha_actual', '$hora_actual');");
+                $con->query("INSERT INTO asistencia (alumno_tarjeta, administrador_usuario, id_asistencia,fecha, cena) VALUES ('$tarjeta', '$admin', '$id', '$fecha_actual', '$hora_actual');");
                 echo "<script>alert('Registo exitodo en cena')</script>";
                 retornar();
             }else {
