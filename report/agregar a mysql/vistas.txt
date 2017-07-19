@@ -1,9 +1,0 @@
-use comedor_unjbg
-
-alter view v_asis
-as
-SELECT asistencia.alumno_tarjeta,asistencia.fecha,asistencia.desayuno,asistencia.almuerzo,asistencia.cena,asistencia.domingo from asistencia
-
-
-
-select * from v_asis 
