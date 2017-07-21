@@ -3,7 +3,7 @@
 <head>
 <!-- comedor -->
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/bootstrap_ad.css">
+	<link rel="stylesheet" href="css/bootstrap_login.css">
 	<script languaje="javascript" src="js/admin_validar_sesion.js"></script>
 	<title>Ingreso de Administrador </title>
 </head>
