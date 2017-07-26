@@ -27,7 +27,7 @@
 		<title>Reporte de Asistencias</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-		<link href="css/ma_ver_asistencia1.css" rel="stylesheet">
+		<link href="css/ma_ver_asistencia.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</head>
 	<body>

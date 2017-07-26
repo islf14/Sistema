@@ -5,15 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Registro de Asistencia</title>
+		<link rel="stylesheet" href="css/ma_marcar_asistencia.css"> 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>  
     <div class="container">
 			<div class="row-fluid">				
 				<div class="col-md-12">
-					<h2><span class="glyphicon glyphicon-edit"></span> Marcar Asistencia</h2>
+					<h2 class="titulo"><span class="glyphicon glyphicon-edit"></span> Marcar Asistencia</h2>
 					<hr>
-
 					<form class="form-horizontal" role="form" id="datos_pedido" action="ma_marcar_asistencia_validar.php" method = "POST">
 						<div class="row">					
 							<div class="col-md-3">
@@ -32,8 +32,7 @@
 						<hr>
 						<div class="col-md-12">
 							<div class="pull-right">
-								<input type="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal" value="Marcar Asistencia">
-								<span class="glyphicon glyphicon-plus"></span>
+								<input type="submit" class="btn btn-info" data-toggle="modal" data-target="#myModal" value="Marcar Asistencia">								
 								</input>				
 							</div>	
 						</div>

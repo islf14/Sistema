@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/bootstrap_ad.css">
+		<link rel="stylesheet" href="css/bootstrap_ma_nuevo_admin.css">
 		<title>Registro de Administrador </title>
 		<script languaje="javascript" src="js/ma_nuevo_admin_validar.js"></script>
 	</head>

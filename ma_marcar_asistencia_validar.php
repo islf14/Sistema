@@ -18,12 +18,11 @@
     //    
     $fecha_sistema= date("Y-m-d H:i:s");
     ////////////
-    //$hora_actual=date("H:i",mktime(07,45));
-    $hora_actual=date("H:i");
-    //echo "<script>alert('hora actual: $hora_actual')</script>";
-    //$fecha_actual=date("Y-m-d",mktime(0,0,0,07,19,2017));
-    $fecha_actual=date("Y-m-d");
-    //echo "<script>alert('fecha actual: $fecha_actual')</script>";
+    $hora_actual=date("H:i",mktime(12,12));
+    //$hora_actual=date("H:i");
+    ////////
+    $fecha_actual=date("Y-m-d",mktime(0,0,0,07,24,2017));
+    //$fecha_actual=date("Y-m-d");   
     //////////////
     $admin="admin";
     //establecienido límites

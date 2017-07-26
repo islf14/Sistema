@@ -1,0 +1,29 @@
+body{
+	background: url("../images/12.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+header {
+	margin-top: 4%;
+	margin-right: 2%;
+	margin-left: 2%;
+	text-align: center;
+}
+.form{
+	padding-left: 20%;
+	padding-top: 10%;
+}
+section {
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.pad-basic{
+padding:.5%; 	
+}
+.no-btm{
+	margin-bottom:0%;
+}
+.btn-der{
+	text-align: right;
+}

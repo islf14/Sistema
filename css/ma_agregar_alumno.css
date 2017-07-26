@@ -1,0 +1,33 @@
+body{
+    background: url("../images/12.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.form{
+	position:relative;
+	width:30%;
+	height:auto;
+    padding-left:3rem;
+    padding-right: 3rem;
+    padding: 1rem;
+    background-color:#fff;
+	border-radius:20px;
+    margin:auto;
+    font-size: 14px;
+}
+input[type=text]{
+	width:100%;
+	height:auto;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
+input[type=submit]{
+	position:relative;
+	width:50%;
+	height:auto;
+	border-radius:20px;
+	margin-left:150px;
+	border:0px;
+	background-color:#32A43E;
+	font: 14px normal normal uppercase helvetica, arial, serif;
+}
